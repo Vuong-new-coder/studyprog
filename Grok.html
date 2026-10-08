@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia - Học Tập Thông Minh</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; }
+        header { background: linear-gradient(135deg, #9caeff 0%, #5b00b6 100%); color: white; padding: 1rem 0; }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        .logo { font-size: 1.8rem; font-weight: bold; }
+        .hero { text-align: center; padding: 100px 20px; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1600x900/?learning') center/cover; color: white; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        .courses { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
+        .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .course-card { border: 1px solid #ddd; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .course-card:hover { transform: translateY(-10px); }
+        .course-card img { width: 100%; height: 180px; object-fit: cover; }
+        footer { background: #222; color: #ddd; text-align: center; padding: 40px 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Academia</div>
+            <div>
+                <a href="#" style="color:white; margin:0 15px; text-decoration:none;">Khóa học</a>
+                <a href="#" style="color:white; margin:0 15px; text-decoration:none;">Blog</a>
+                <a href="#" style="color:white; margin:0 15px; text-decoration:none;">Đăng nhập</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Học Tập Không Giới Hạn</h1>
+        <p style="font-size:1.4rem; max-width:700px; margin:0 auto 30px;">Hàng trăm khóa học chất lượng cao từ các chuyên gia hàng đầu</p>
+        <button onclick="alert('Chào mừng bạn đến với Academia!')" style="padding:15px 40px; font-size:1.2rem; background:#fff; color:#667eea; border:none; border-radius:50px; cursor:pointer;">
+            Bắt đầu học miễn phí
+        </button>
+    </section>
+
+    <section class="courses">
+        <h2 style="text-align:center; margin-bottom:30px;">Khóa học nổi bật</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <img src="https://source.unsplash.com/random/300x200/?programming" alt="Lập trình">
+                <div style="padding:20px;">
+                    <h3>Python cho người mới bắt đầu</h3>
+                    <p>4.9 ★ • 12.5k học viên</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://source.unsplash.com/random/300x200/?english" alt="Tiếng Anh">
+                <div style="padding:20px;">
+                    <h3>Tiếng Anh giao tiếp chuyên sâu</h3>
+                    <p>4.8 ★ • 8.2k học viên</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://source.unsplash.com/random/300x200/?design" alt="Thiết kế">
+                <div style="padding:20px;">
+                    <h3>UI/UX Design từ A-Z</h3>
+                    <p>5.0 ★ • 6.1k học viên</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Academia - Nền tảng học tập trực tuyến</p>
+    </footer>
+</body>
+</html>

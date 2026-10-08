@@ -1,0 +1,105 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin : 0;
+  background-color : ghostwhite;
+  color: aquamarine;
+}
+
+nav {
+  min-height:100px;
+  max-height : 200px;
+  width :auto;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background: linear-gradient(135deg, #9caeff 0%, #5b00b6 100%);
+  color: white;
+  display: flex;
+  backdrop-filter: blur(10px);
+}
+
+nav a {
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #8a8a8a;
+  transform: scale(1.5);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.hero {
+  background-color : #333;
+  color : white;
+  align-items : center;
+  padding : 1px;
+}
+
+.hero h1 {
+  font-size : 55px;
+  font-weight : 700;
+  text-align : center;
+}
+
+.para {
+  background : linear-gradient( 0deg, #5b50b3 , #333 );
+  color :#ffffff;
+  text-align: left;
+  text-align:start;
+  padding : 1px;
+  font-weight: 600;
+}
+
+.tsk {
+  width : 240px;
+  border : 2px solid #ffffff;
+  border-radius : 12px;
+  padding-left : 5%;
+  transition: transform 0.5s;
+}
+
+.tsk:hover {
+  transform: translateY(-10px);
+  background-color :rgba(200, 200, 200, 0.5);
+  backdrop-filter:blur(70px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.popup {
+  display: none; /* Mặc định ẩn */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  padding: 15px;
+  background: #333;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+#close-btn {
+  margin-top: 10px;
+  padding: 5px 15px;
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#popup-text {
+  white-space: pre-line;
+}
