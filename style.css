@@ -62,10 +62,11 @@ nav a:hover {
 }
 
 .tsk {
-  width : 240px;
-  border : 2px solid #ffffff;
-  border-radius : 12px;
-  padding-left : 5%;
+  width: 240px;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  padding-left: 5%;
+  padding-right: 5%;
   transition: transform 0.5s;
 }
 
